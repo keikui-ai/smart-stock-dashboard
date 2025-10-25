@@ -135,7 +135,7 @@ try:
         st.error(f"No data found for {ticker}. Try a different symbol.")
         st.stop()
 except Exception as e:
-    st.error(f"Error loading data: {e}")
+    st.error(f"Error loading  {e}")
     st.stop()
 
 latest_price = df['Close'][-1]
